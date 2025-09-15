@@ -11,42 +11,42 @@
     },
     "marker_10001": {
       "colour": "orange",
-      "models": "UBERON:9966146",
+      "models": "UBERON:9974907",
       "name": "right level of superior border of jugular foramen on the vagus nerve"
     },
     "marker_10002": {
       "colour": "orange",
-      "models": "UBERON:9955020",
+      "models": "UBERON:9986680",
       "name": "right level of inferior border of jugular foramen on the vagus nerve"
     },
     "marker_10003": {
       "colour": "orange",
-      "models": "UBERON:9976356",
+      "models": "UBERON:9945142",
       "name": "right level of angle of the mandible on the vagus nerve"
     },
     "marker_10004": {
       "colour": "orange",
-      "models": "UBERON:9918863",
+      "models": "UBERON:9977575",
       "name": "right level of carotid bifurcation on the vagus nerve"
     },
     "marker_10005": {
       "colour": "orange",
-      "models": "UBERON:9977190",
+      "models": "UBERON:9958880",
       "name": "right level of laryngeal prominence on the vagus nerve"
     },
     "marker_10006": {
       "colour": "orange",
-      "models": "UBERON:9919326",
+      "models": "UBERON:9981597",
       "name": "right level of superior border of the clavicle on the vagus nerve"
     },
     "marker_10007": {
       "colour": "orange",
-      "models": "UBERON:9984974",
+      "models": "UBERON:9933744",
       "name": "right level of jugular notch on the vagus nerve"
     },
     "marker_10008": {
       "colour": "orange",
-      "models": "UBERON:9951091",
+      "models": "UBERON:9973239",
       "name": "right level of sternal angle on the vagus nerve"
     },
     "thoracic_region": {
