@@ -12,123 +12,123 @@
     "marker_10001": {
       "colour": "orange",
       "label": "left level of superior border of jugular foramen on the vagus nerve",
-      "models": "UBERON:9950040"
+      "models": "UBERON:9900222"
     },
     "marker_10002": {
       "colour": "orange",
       "label": "left level of inferior border of jugular foramen on the vagus nerve",
-      "models": "UBERON:9964314"
+      "models": "UBERON:9924828"
     },
     "marker_10003": {
       "colour": "orange",
       "label": "left level of angle of the mandible on the vagus nerve",
-      "models": "UBERON:9974669"
+      "models": "UBERON:9943407"
     },
     "marker_10004": {
       "colour": "orange",
       "label": "left level of carotid bifurcation on the vagus nerve",
-      "models": "UBERON:9952479"
+      "models": "UBERON:9959600"
     },
     "marker_10005": {
       "colour": "orange",
       "label": "left level of laryngeal prominence on the vagus nerve",
-      "models": "UBERON:9942032"
+      "models": "UBERON:9955084"
     },
     "marker_10006": {
       "colour": "orange",
       "label": "left level of superior border of the clavicle on the vagus nerve",
-      "models": "UBERON:9918740"
+      "models": "UBERON:9927644"
     },
     "marker_10007": {
       "colour": "orange",
       "label": "left level of jugular notch on the vagus nerve",
-      "models": "UBERON:9947764"
+      "models": "UBERON:9956653"
     },
     "marker_10008": {
       "colour": "orange",
       "label": "left level of sternal angle on the vagus nerve",
-      "models": "UBERON:9960621"
+      "models": "UBERON:9981368"
     },
     "nerve_feature_01": {
-      "label": "Left hypoglossal nerve"
+      "label": "Default label."
     },
     "nerve_feature_02": {
-      "label": "Left spinal accessory nerve"
+      "label": "Default label."
     },
     "nerve_feature_03": {
-      "label": "Left superior laryngeal nerve"
+      "label": "Default label."
     },
     "nerve_feature_06": {
-      "label": "left A branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_07": {
-      "label": "left A cardiovascular branch of cervical vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_08": {
-      "label": "left A cardiovascular branch of thoracic vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_09": {
-      "label": "left A cranial nerve bundle to cervical spinal nerve"
+      "label": "Default label."
     },
     "nerve_feature_10": {
-      "label": "left A lateral pulmonary branch of vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_11": {
-      "label": "left B branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_12": {
-      "label": "left B cardiovascular branch of cervical vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_13": {
-      "label": "left B cardiovascular branch of thoracic vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_14": {
-      "label": "left B cranial nerve bundle to cervical spinal nerve"
+      "label": "Default label."
     },
     "nerve_feature_15": {
-      "label": "left B lateral pulmonary branch of vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_16": {
-      "label": "left C branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_17": {
-      "label": "left C cardiovascular branch of cervical vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_18": {
-      "label": "left D branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_19": {
-      "label": "left D cardiovascular branch of cervical vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_20": {
-      "label": "left E branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_21": {
-      "label": "left F branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_22": {
-      "label": "left G branch of thoracic vagus nerve to esophageal plexus"
+      "label": "Default label."
     },
     "nerve_feature_23": {
-      "label": "left branch between cranial nerve bundle and superior cervical ganglion"
+      "label": "Default label."
     },
     "nerve_feature_27": {
-      "label": "left cervical vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_30": {
-      "label": "left medial pulmonary branch of vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_31": {
-      "label": "left pharyngeal branch of cranial nerve bundle"
+      "label": "Default label."
     },
     "nerve_feature_32": {
-      "label": "left recurrent laryngeal nerve"
+      "label": "Default label."
     },
     "nerve_feature_33": {
-      "label": "left thoracic cardiopulmonary branch of vagus nerve"
+      "label": "Default label."
     },
     "nerve_feature_34": {
-      "label": "left thoracic vagus nerve"
+      "label": "Default label."
     },
     "thoracic_region": {
       "name": "Thoracic T1-T12"
