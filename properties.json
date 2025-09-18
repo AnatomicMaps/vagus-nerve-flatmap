@@ -12,123 +12,129 @@
     "marker_10001": {
       "colour": "orange",
       "label": "left level of superior border of jugular foramen on the vagus nerve",
-      "models": "UBERON:9900222"
+      "models": "UBERON:9978866"
     },
     "marker_10002": {
       "colour": "orange",
       "label": "left level of inferior border of jugular foramen on the vagus nerve",
-      "models": "UBERON:9924828"
+      "models": "UBERON:9973010"
     },
     "marker_10003": {
       "colour": "orange",
       "label": "left level of angle of the mandible on the vagus nerve",
-      "models": "UBERON:9943407"
+      "models": "UBERON:9913740"
     },
     "marker_10004": {
       "colour": "orange",
       "label": "left level of carotid bifurcation on the vagus nerve",
-      "models": "UBERON:9959600"
+      "models": "UBERON:9940946"
     },
     "marker_10005": {
       "colour": "orange",
       "label": "left level of laryngeal prominence on the vagus nerve",
-      "models": "UBERON:9955084"
+      "models": "UBERON:9950441"
     },
     "marker_10006": {
       "colour": "orange",
       "label": "left level of superior border of the clavicle on the vagus nerve",
-      "models": "UBERON:9927644"
+      "models": "UBERON:9907144"
     },
     "marker_10007": {
       "colour": "orange",
       "label": "left level of jugular notch on the vagus nerve",
-      "models": "UBERON:9956653"
+      "models": "UBERON:9985001"
     },
     "marker_10008": {
       "colour": "orange",
       "label": "left level of sternal angle on the vagus nerve",
-      "models": "UBERON:9981368"
+      "models": "UBERON:9947611"
     },
     "nerve_feature_01": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_02": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_03": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
+    },
+    "nerve_feature_05": {
+      "label": "Label not found during lookup."
     },
     "nerve_feature_06": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_07": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_08": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_09": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_10": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_11": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_12": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_13": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_14": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_15": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_16": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_17": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_18": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_19": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_20": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_21": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_22": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_23": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_27": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_30": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_31": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_32": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_33": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
     },
     "nerve_feature_34": {
-      "label": "Default label."
+      "label": "Label not found during lookup."
+    },
+    "nerve_feature_35": {
+      "label": "Label not found during lookup."
     },
     "thoracic_region": {
       "name": "Thoracic T1-T12"
@@ -140,6 +146,10 @@
         {
           "id": "nerve_feature_27",
           "models": "http://uri.interlex.org/base/ilx_0794142"
+        },
+        {
+          "id": "nerve_feature_35",
+          "models": "http://uri.interlex.org/base/ilx_0785628"
         },
         {
           "id": "nerve_feature_34",
@@ -158,6 +168,10 @@
           "models": "http://uri.interlex.org/base/ilx_0788780"
         },
         {
+          "id": "nerve_feature_05",
+          "models": "http://uri.interlex.org/base/ilx_0796405"
+        },
+        {
           "id": "nerve_feature_23",
           "models": "http://uri.interlex.org/base/ilx_0796404"
         },
@@ -166,16 +180,56 @@
           "models": "http://uri.interlex.org/base/ilx_0796088"
         },
         {
+          "id": "nerve_feature_07",
+          "models": "http://uri.interlex.org/base/ilx_0795235"
+        },
+        {
+          "id": "nerve_feature_08",
+          "models": "http://uri.interlex.org/base/ilx_0795265"
+        },
+        {
+          "id": "nerve_feature_09",
+          "models": "http://uri.interlex.org/base/ilx_0795554"
+        },
+        {
+          "id": "nerve_feature_10",
+          "models": "http://uri.interlex.org/base/ilx_0794289"
+        },
+        {
           "id": "nerve_feature_11",
           "models": "http://uri.interlex.org/base/ilx_0796089"
+        },
+        {
+          "id": "nerve_feature_12",
+          "models": "http://uri.interlex.org/base/ilx_0795236"
+        },
+        {
+          "id": "nerve_feature_13",
+          "models": "http://uri.interlex.org/base/ilx_0795266"
+        },
+        {
+          "id": "nerve_feature_14",
+          "models": "http://uri.interlex.org/base/ilx_0795555"
+        },
+        {
+          "id": "nerve_feature_15",
+          "models": "http://uri.interlex.org/base/ilx_0794290"
         },
         {
           "id": "nerve_feature_16",
           "models": "http://uri.interlex.org/base/ilx_0796090"
         },
         {
+          "id": "nerve_feature_17",
+          "models": "http://uri.interlex.org/base/ilx_0795237"
+        },
+        {
           "id": "nerve_feature_18",
           "models": "http://uri.interlex.org/base/ilx_0796091"
+        },
+        {
+          "id": "nerve_feature_19",
+          "models": "http://uri.interlex.org/base/ilx_0795238"
         },
         {
           "id": "nerve_feature_20",
@@ -188,46 +242,6 @@
         {
           "id": "nerve_feature_22",
           "models": "http://uri.interlex.org/base/ilx_0796094"
-        },
-        {
-          "id": "nerve_feature_07",
-          "models": "http://uri.interlex.org/base/ilx_0795235"
-        },
-        {
-          "id": "nerve_feature_12",
-          "models": "http://uri.interlex.org/base/ilx_0795236"
-        },
-        {
-          "id": "nerve_feature_17",
-          "models": "http://uri.interlex.org/base/ilx_0795237"
-        },
-        {
-          "id": "nerve_feature_19",
-          "models": "http://uri.interlex.org/base/ilx_0795238"
-        },
-        {
-          "id": "nerve_feature_08",
-          "models": "http://uri.interlex.org/base/ilx_0795265"
-        },
-        {
-          "id": "nerve_feature_13",
-          "models": "http://uri.interlex.org/base/ilx_0795266"
-        },
-        {
-          "id": "nerve_feature_09",
-          "models": "http://uri.interlex.org/base/ilx_0795554"
-        },
-        {
-          "id": "nerve_feature_14",
-          "models": "http://uri.interlex.org/base/ilx_0795555"
-        },
-        {
-          "id": "nerve_feature_10",
-          "models": "http://uri.interlex.org/base/ilx_0794289"
-        },
-        {
-          "id": "nerve_feature_15",
-          "models": "http://uri.interlex.org/base/ilx_0794290"
         },
         {
           "id": "nerve_feature_30",
