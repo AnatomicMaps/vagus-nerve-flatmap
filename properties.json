@@ -11,130 +11,130 @@
     },
     "marker_10001": {
       "colour": "orange",
-      "label": "left level of superior border of jugular foramen on the vagus nerve",
-      "models": "UBERON:9978866"
+      "label": "Label 'left level of superior border of jugular foramen on the vagus nerve' for term 'UBERON:9953757' not found during lookup.",
+      "models": "UBERON:9953757"
     },
     "marker_10002": {
       "colour": "orange",
-      "label": "left level of inferior border of jugular foramen on the vagus nerve",
-      "models": "UBERON:9973010"
+      "label": "Label 'left level of inferior border of jugular foramen on the vagus nerve' for term 'UBERON:9914424' not found during lookup.",
+      "models": "UBERON:9914424"
     },
     "marker_10003": {
       "colour": "orange",
-      "label": "left level of angle of the mandible on the vagus nerve",
-      "models": "UBERON:9913740"
+      "label": "Label 'left level of angle of the mandible on the vagus nerve' for term 'UBERON:9916115' not found during lookup.",
+      "models": "UBERON:9916115"
     },
     "marker_10004": {
       "colour": "orange",
-      "label": "left level of carotid bifurcation on the vagus nerve",
-      "models": "UBERON:9940946"
+      "label": "Label 'left level of carotid bifurcation on the vagus nerve' for term 'UBERON:9926196' not found during lookup.",
+      "models": "UBERON:9926196"
     },
     "marker_10005": {
       "colour": "orange",
-      "label": "left level of laryngeal prominence on the vagus nerve",
-      "models": "UBERON:9950441"
+      "label": "Label 'left level of laryngeal prominence on the vagus nerve' for term 'UBERON:9952680' not found during lookup.",
+      "models": "UBERON:9952680"
     },
     "marker_10006": {
       "colour": "orange",
-      "label": "left level of superior border of the clavicle on the vagus nerve",
-      "models": "UBERON:9907144"
+      "label": "Label 'left level of superior border of the clavicle on the vagus nerve' for term 'UBERON:9982533' not found during lookup.",
+      "models": "UBERON:9982533"
     },
     "marker_10007": {
       "colour": "orange",
-      "label": "left level of jugular notch on the vagus nerve",
-      "models": "UBERON:9985001"
+      "label": "Label 'left level of jugular notch on the vagus nerve' for term 'UBERON:9984126' not found during lookup.",
+      "models": "UBERON:9984126"
     },
     "marker_10008": {
       "colour": "orange",
-      "label": "left level of sternal angle on the vagus nerve",
-      "models": "UBERON:9947611"
+      "label": "Label 'left level of sternal angle on the vagus nerve' for term 'UBERON:9945402' not found during lookup.",
+      "models": "UBERON:9945402"
     },
     "nerve_feature_01": {
-      "label": "Label not found during lookup."
+      "label": "Label 'Left hypoglossal nerve' for term 'http://uri.interlex.org/base/ilx_0791765' not found during lookup."
     },
     "nerve_feature_02": {
-      "label": "Label not found during lookup."
+      "label": "Label 'Left spinal accessory nerve' for term 'http://uri.interlex.org/base/ilx_0787864' not found during lookup."
     },
     "nerve_feature_03": {
-      "label": "Label not found during lookup."
+      "label": "Label 'Left superior laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0788780' not found during lookup."
     },
     "nerve_feature_05": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left A branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796405' not found during lookup."
     },
     "nerve_feature_06": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left A branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796088' not found during lookup."
     },
     "nerve_feature_07": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left A cardiovascular branch of cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795235' not found during lookup."
     },
     "nerve_feature_08": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left A cardiovascular branch of thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795265' not found during lookup."
     },
     "nerve_feature_09": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left A cranial nerve bundle to cervical spinal nerve' for term 'http://uri.interlex.org/base/ilx_0795554' not found during lookup."
     },
     "nerve_feature_10": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left A lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794289' not found during lookup."
     },
     "nerve_feature_11": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left B branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796089' not found during lookup."
     },
     "nerve_feature_12": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left B cardiovascular branch of cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795236' not found during lookup."
     },
     "nerve_feature_13": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left B cardiovascular branch of thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795266' not found during lookup."
     },
     "nerve_feature_14": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left B cranial nerve bundle to cervical spinal nerve' for term 'http://uri.interlex.org/base/ilx_0795555' not found during lookup."
     },
     "nerve_feature_15": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left B lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794290' not found during lookup."
     },
     "nerve_feature_16": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left C branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796090' not found during lookup."
     },
     "nerve_feature_17": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left C cardiovascular branch of cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795237' not found during lookup."
     },
     "nerve_feature_18": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left D branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796091' not found during lookup."
     },
     "nerve_feature_19": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left D cardiovascular branch of cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795238' not found during lookup."
     },
     "nerve_feature_20": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left E branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796092' not found during lookup."
     },
     "nerve_feature_21": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left F branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796093' not found during lookup."
     },
     "nerve_feature_22": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left G branch of thoracic vagus nerve to esophageal plexus' for term 'http://uri.interlex.org/base/ilx_0796094' not found during lookup."
     },
     "nerve_feature_23": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796404' not found during lookup."
     },
     "nerve_feature_27": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794142' not found during lookup."
     },
     "nerve_feature_30": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794265' not found during lookup."
     },
     "nerve_feature_31": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left pharyngeal branch of cranial nerve bundle' for term 'http://uri.interlex.org/base/ilx_0795532' not found during lookup."
     },
     "nerve_feature_32": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left recurrent laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0794226' not found during lookup."
     },
     "nerve_feature_33": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left thoracic cardiopulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794191' not found during lookup."
     },
     "nerve_feature_34": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0787543' not found during lookup."
     },
     "nerve_feature_35": {
-      "label": "Label not found during lookup."
+      "label": "Label 'left vagus nerve' for term 'http://uri.interlex.org/base/ilx_0785628' not found during lookup."
     },
     "thoracic_region": {
       "name": "Thoracic T1-T12"
