@@ -11,43 +11,43 @@
     },
     "marker_10001": {
       "colour": "orange",
-      "models": "UBERON:9974907",
-      "name": "right level of superior border of jugular foramen on the vagus nerve"
+      "models": "UBERON:9948739",
+      "name": "left level of superior border of jugular foramen on the vagus nerve"
     },
     "marker_10002": {
       "colour": "orange",
-      "models": "UBERON:9986680",
-      "name": "right level of inferior border of jugular foramen on the vagus nerve"
+      "models": "UBERON:9965901",
+      "name": "left level of inferior border of jugular foramen on the vagus nerve"
     },
     "marker_10003": {
       "colour": "orange",
-      "models": "UBERON:9945142",
-      "name": "right level of angle of the mandible on the vagus nerve"
+      "models": "UBERON:9987530",
+      "name": "left level of angle of the mandible on the vagus nerve"
     },
     "marker_10004": {
       "colour": "orange",
-      "models": "UBERON:9977575",
-      "name": "right level of carotid bifurcation on the vagus nerve"
+      "models": "UBERON:9902805",
+      "name": "left level of carotid bifurcation on the vagus nerve"
     },
     "marker_10005": {
       "colour": "orange",
-      "models": "UBERON:9958880",
-      "name": "right level of laryngeal prominence on the vagus nerve"
+      "models": "UBERON:9940190",
+      "name": "left level of laryngeal prominence on the vagus nerve"
     },
     "marker_10006": {
       "colour": "orange",
-      "models": "UBERON:9981597",
-      "name": "right level of superior border of the clavicle on the vagus nerve"
+      "models": "UBERON:9951976",
+      "name": "left level of superior border of the clavicle on the vagus nerve"
     },
     "marker_10007": {
       "colour": "orange",
-      "models": "UBERON:9933744",
-      "name": "right level of jugular notch on the vagus nerve"
+      "models": "UBERON:9911356",
+      "name": "left level of jugular notch on the vagus nerve"
     },
     "marker_10008": {
       "colour": "orange",
-      "models": "UBERON:9973239",
-      "name": "right level of sternal angle on the vagus nerve"
+      "models": "UBERON:9979198",
+      "name": "left level of sternal angle on the vagus nerve"
     },
     "thoracic_region": {
       "name": "Thoracic T1-T12"
@@ -62,8 +62,8 @@
             "point_02"
           ],
           "id": "nerve_feature_01",
-          "label": "Right hypoglossal nerve",
-          "models": "http://uri.interlex.org/base/ilx_0790245"
+          "label": "anterior branch of left recurrent laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0795071"
         },
         {
           "connects": [
@@ -71,8 +71,8 @@
             "point_04"
           ],
           "id": "nerve_feature_02",
-          "label": "Right spinal accessory nerve",
-          "models": "http://uri.interlex.org/base/ilx_0785210"
+          "label": "branch of left recurrent laryngeal nerve to muscle of larynx",
+          "models": "http://uri.interlex.org/base/ilx_0795085"
         },
         {
           "connects": [
@@ -80,8 +80,8 @@
             "point_06"
           ],
           "id": "nerve_feature_03",
-          "label": "cardiovascular/cardiopulmonary branch of right cervical vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0796422"
+          "label": "branch of left vagus nerve to carotid body",
+          "models": "http://uri.interlex.org/base/ilx_0791085"
         },
         {
           "connects": [
@@ -89,395 +89,396 @@
             "point_08"
           ],
           "id": "nerve_feature_04",
-          "label": "cardiovascular/cardiopulmonary branch of right thoracic vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0796455"
+          "label": "cardiac branch of left vagus to deep cardiac plexus",
+          "models": "http://uri.interlex.org/base/ilx_0795087"
         },
         {
           "connects": [
             "point_09",
             "point_10"
           ],
-          "id": "nerve_feature_08",
-          "label": "right A branch of cervical vagus nerve to sympathetic chain, cardiovascular, and pulmonary structures",
-          "models": "http://uri.interlex.org/base/ilx_0796412"
-        },
-        {
-          "connects": [
-            "point_09",
-            "point_10"
-          ],
-          "id": "nerve_feature_35",
-          "label": "right branch of cervical vagus nerve to sympathetic chain, cardiovascular, and pulmonary structures",
-          "models": "http://uri.interlex.org/base/ilx_0796411"
+          "id": "nerve_feature_05",
+          "label": "celiac branch of posterior vagal trunk",
+          "models": "http://uri.interlex.org/base/ilx_0789580"
         },
         {
           "connects": [
             "point_11",
             "point_12"
           ],
-          "id": "nerve_feature_09",
-          "label": "right A branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0796072"
+          "id": "nerve_feature_06",
+          "label": "communicating branch of auricular branch of left vagus nerve with left facial nerve",
+          "models": "http://uri.interlex.org/base/ilx_0787673"
         },
         {
           "connects": [
-            "point_11",
-            "point_12",
             "point_13",
-            "point_14",
-            "point_15",
-            "point_16",
-            "point_17",
-            "point_19",
-            "point_18",
-            "point_20",
-            "point_21"
+            "point_14"
           ],
-          "id": "nerve_feature_34",
-          "label": "right branch between of thoracic vagus nerve and esophagus plexus",
-          "models": "http://uri.interlex.org/base/ilx_0796071"
+          "id": "nerve_feature_07",
+          "label": "communicating branch of auricular branch of left vagus nerve with left posterior auricular nerve",
+          "models": "http://uri.interlex.org/base/ilx_0786219"
         },
         {
           "connects": [
-            "point_22",
-            "point_23"
+            "point_15",
+            "point_16"
+          ],
+          "id": "nerve_feature_08",
+          "label": "communicating branch of left external laryngeal nerve with left superior cardiac nerve",
+          "models": "http://uri.interlex.org/base/ilx_0787107"
+        },
+        {
+          "connects": [
+            "point_17",
+            "point_18"
+          ],
+          "id": "nerve_feature_09",
+          "label": "communicating branch of left internal laryngeal nerve with left recurrent laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0789900"
+        },
+        {
+          "connects": [
+            "point_19",
+            "point_20"
           ],
           "id": "nerve_feature_10",
-          "label": "right A cardiovascular branch of cervical vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0795220"
+          "label": "communicating branch of left recurrent laryngeal nerve with superior cervical ganglion"
         },
         {
           "connects": [
-            "point_22",
-            "point_23"
+            "point_21",
+            "point_22"
           ],
-          "id": "nerve_feature_36",
-          "label": "right cardiovascular branch of cervical vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794846"
+          "id": "nerve_feature_12",
+          "label": "esophageal branch of left recurrent laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0791513"
         },
         {
           "connects": [
-            "point_24",
-            "point_25"
+            "point_23",
+            "point_24"
           ],
-          "id": "nerve_feature_11",
-          "label": "right A cardiovascular branch of cranial nerve bundle",
-          "models": "http://uri.interlex.org/base/ilx_0796386"
+          "id": "nerve_feature_13",
+          "label": "external branch of left inferior laryngeal nerve"
         },
         {
           "connects": [
-            "point_24",
             "point_25",
             "point_26"
           ],
-          "id": "nerve_feature_37",
-          "label": "right cardiovascular branch of cranial nerve bundle",
-          "models": "http://uri.interlex.org/base/ilx_0795539"
+          "id": "nerve_feature_14",
+          "label": "extra laryngeal branch of left recurrent laryngeal nerve to larynx",
+          "models": "http://uri.interlex.org/base/ilx_0795069"
         },
         {
           "connects": [
             "point_27",
             "point_28"
           ],
-          "id": "nerve_feature_12",
-          "label": "right A lateral pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794278"
+          "id": "nerve_feature_15",
+          "label": "greater posterior gastric nerve",
+          "models": "http://uri.interlex.org/base/ilx_0788809"
         },
         {
           "connects": [
-            "point_27",
-            "point_28",
             "point_29",
-            "point_30",
-            "point_31"
+            "point_30"
           ],
-          "id": "nerve_feature_40",
-          "label": "right lateral pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794277"
+          "id": "nerve_feature_16",
+          "label": "inferior branch of left internal laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0785467"
         },
         {
           "connects": [
-            "point_32",
-            "point_33"
+            "point_31",
+            "point_32"
           ],
-          "id": "nerve_feature_13",
-          "label": "right A medial pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794255"
+          "id": "nerve_feature_17",
+          "label": "inferior cervical cardiac branch of left recurrent laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794244"
         },
         {
           "connects": [
-            "point_32",
             "point_33",
-            "point_34",
+            "point_34"
+          ],
+          "id": "nerve_feature_18",
+          "label": "inferior cervical cardiac branch of left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0786047"
+        },
+        {
+          "connects": [
             "point_35",
             "point_36"
           ],
-          "id": "nerve_feature_41",
-          "label": "right medial pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794254"
+          "id": "nerve_feature_19",
+          "label": "left A cervical cardiopulmonary branch of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794160"
+        },
+        {
+          "connects": [
+            "point_35",
+            "point_37",
+            "point_36"
+          ],
+          "id": "nerve_feature_25",
+          "label": "left cervical cardiopulmonary branch of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794159"
         },
         {
           "connects": [
             "point_37",
             "point_38"
           ],
-          "id": "nerve_feature_14",
-          "label": "right A thoracic cardiopulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794181"
+          "id": "nerve_feature_20",
+          "label": "left B cervical cardiopulmonary branch of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794161"
         },
         {
           "connects": [
-            "point_37",
-            "point_38",
             "point_39",
             "point_40"
           ],
-          "id": "nerve_feature_45",
-          "label": "right thoracic cardiopulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794180"
+          "id": "nerve_feature_21",
+          "label": "left auricular branch of left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0789344"
         },
         {
           "connects": [
-            "point_13",
-            "point_41"
-          ],
-          "id": "nerve_feature_15",
-          "label": "right B branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794301"
-        },
-        {
-          "connects": [
-            "point_26",
+            "point_41",
             "point_42"
           ],
-          "id": "nerve_feature_16",
-          "label": "right B cardiovascular branch of cranial nerve bundle",
-          "models": "http://uri.interlex.org/base/ilx_0796387"
+          "id": "nerve_feature_22",
+          "label": "left branch between vagus nerve and glossopharyngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0790685"
         },
         {
           "connects": [
-            "point_29",
-            "point_43"
-          ],
-          "id": "nerve_feature_17",
-          "label": "right B lateral pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794279"
-        },
-        {
-          "connects": [
-            "point_34",
+            "point_43",
             "point_44"
           ],
-          "id": "nerve_feature_18",
-          "label": "right B medial pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794256"
+          "id": "nerve_feature_23",
+          "label": "left branch between vagus nerve and superior cervical ganglion",
+          "models": "http://uri.interlex.org/base/ilx_0794061"
         },
         {
           "connects": [
-            "point_39",
-            "point_45"
-          ],
-          "id": "nerve_feature_19",
-          "label": "right B thoracic cardiopulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794182"
-        },
-        {
-          "connects": [
-            "point_14",
+            "point_45",
             "point_46"
           ],
-          "id": "nerve_feature_20",
-          "label": "right C branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794302"
+          "id": "nerve_feature_24",
+          "label": "left branch of left vagus nerve to esophageal nerve plexus",
+          "models": "http://uri.interlex.org/base/ilx_0794310"
         },
         {
           "connects": [
-            "point_30",
-            "point_47"
-          ],
-          "id": "nerve_feature_21",
-          "label": "right C lateral pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794280"
-        },
-        {
-          "connects": [
-            "point_35",
+            "point_47",
             "point_48"
           ],
-          "id": "nerve_feature_22",
-          "label": "right C medial pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794257"
+          "id": "nerve_feature_26",
+          "label": "left cervical vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794142"
         },
         {
           "connects": [
-            "point_40",
+            "point_47",
             "point_49"
           ],
-          "id": "nerve_feature_23",
-          "label": "right C thoracic cardiopulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794183"
+          "id": "nerve_feature_40",
+          "label": "left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0785628"
         },
         {
           "connects": [
-            "point_15",
-            "point_50"
-          ],
-          "id": "nerve_feature_24",
-          "label": "right D branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794303"
-        },
-        {
-          "connects": [
-            "point_31",
+            "point_50",
             "point_51"
           ],
-          "id": "nerve_feature_25",
-          "label": "right D lateral pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794281"
+          "id": "nerve_feature_27",
+          "label": "left external laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0789760"
         },
         {
           "connects": [
-            "point_36",
-            "point_52"
-          ],
-          "id": "nerve_feature_26",
-          "label": "right D medial pulmonary branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794258"
-        },
-        {
-          "connects": [
-            "point_16",
+            "point_52",
             "point_53"
           ],
-          "id": "nerve_feature_27",
-          "label": "right E branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794304"
-        },
-        {
-          "connects": [
-            "point_17",
-            "point_54"
-          ],
           "id": "nerve_feature_28",
-          "label": "right F branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794305"
+          "label": "left internal laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0791167"
         },
         {
           "connects": [
-            "point_18",
+            "point_54",
             "point_55"
           ],
           "id": "nerve_feature_29",
-          "label": "right G branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794306"
+          "label": "left meningeal branch of left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0792358"
         },
         {
           "connects": [
-            "point_19",
-            "point_56"
-          ],
-          "id": "nerve_feature_30",
-          "label": "right H branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794307"
-        },
-        {
-          "connects": [
-            "point_20",
+            "point_56",
             "point_57"
           ],
-          "id": "nerve_feature_31",
-          "label": "right I branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794308"
+          "id": "nerve_feature_30",
+          "label": "left pharyngeal branch of left vagus nerve to pharyngeal nerve plexus",
+          "models": "http://uri.interlex.org/base/ilx_0789210"
         },
         {
           "connects": [
-            "point_21",
-            "point_58"
+            "point_58",
+            "point_59"
+          ],
+          "id": "nerve_feature_31",
+          "label": "left pharyngeal branch of left vagus nerve to superior cervical ganglion",
+          "models": "http://uri.interlex.org/base/ilx_0795067"
+        },
+        {
+          "connects": [
+            "point_60",
+            "point_61"
           ],
           "id": "nerve_feature_32",
-          "label": "right J branch of thoracic vagus nerve to esophageal plexus",
-          "models": "http://uri.interlex.org/base/ilx_0794309"
+          "label": "left pulmonary branch A of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0795079"
         },
         {
           "connects": [
-            "point_59",
-            "point_60"
+            "point_60",
+            "point_62",
+            "point_63",
+            "point_64",
+            "point_61"
+          ],
+          "id": "nerve_feature_36",
+          "label": "left pulmonary branch of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794265"
+        },
+        {
+          "connects": [
+            "point_62",
+            "point_65"
           ],
           "id": "nerve_feature_33",
-          "label": "right branch between cranial nerve bundle and superior cervical ganglion",
-          "models": "http://uri.interlex.org/base/ilx_0796398"
+          "label": "left pulmonary branch B of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0795080"
         },
         {
           "connects": [
-            "point_61",
-            "point_62"
+            "point_63",
+            "point_66"
           ],
-          "id": "nerve_feature_38",
-          "label": "right cervical vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794141"
-        },
-        {
-          "connects": [
-            "point_61",
-            "point_63"
-          ],
-          "id": "nerve_feature_48",
-          "label": "right vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0789705"
+          "id": "nerve_feature_34",
+          "label": "left pulmonary branch C of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0795081"
         },
         {
           "connects": [
             "point_64",
-            "point_65"
-          ],
-          "id": "nerve_feature_39",
-          "label": "right cranial nerve bundle to cervical spinal nerve",
-          "models": "http://uri.interlex.org/base/ilx_0795547"
-        },
-        {
-          "connects": [
-            "point_66",
             "point_67"
           ],
-          "id": "nerve_feature_42",
-          "label": "right pharyngeal branch of cranial nerve bundle",
-          "models": "http://uri.interlex.org/base/ilx_0795526"
+          "id": "nerve_feature_35",
+          "label": "left pulmonary branch D of vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0795082"
         },
         {
           "connects": [
             "point_68",
             "point_69"
           ],
-          "id": "nerve_feature_43",
-          "label": "right recurrent laryngeal nerve",
-          "models": "http://uri.interlex.org/base/ilx_0794225"
+          "id": "nerve_feature_37",
+          "label": "left recurrent laryngeal nerve",
+          "models": "http://purl.obolibrary.org/obo/UBERON_0011766"
         },
         {
           "connects": [
             "point_70",
             "point_71"
           ],
-          "id": "nerve_feature_44",
-          "label": "right superior laryngeal nerve",
-          "models": "http://uri.interlex.org/base/ilx_0787738"
+          "id": "nerve_feature_38",
+          "label": "left superior laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0788780"
         },
         {
           "connects": [
-            "point_62",
-            "point_63"
+            "point_48",
+            "point_49"
           ],
-          "id": "nerve_feature_46",
-          "label": "right thoracic vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0786664"
+          "id": "nerve_feature_39",
+          "label": "left thoracic vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0787543"
         },
         {
           "connects": [
             "point_72",
             "point_73"
           ],
+          "id": "nerve_feature_41",
+          "label": "lingual branch of left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0791548"
+        },
+        {
+          "connects": [
+            "point_74",
+            "point_75"
+          ],
+          "id": "nerve_feature_43",
+          "label": "middle branch of left internal laryngeal nerve"
+        },
+        {
+          "connects": [
+            "point_76",
+            "point_77"
+          ],
+          "id": "nerve_feature_45",
+          "label": "posterior branch of left recurrent laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0795073"
+        },
+        {
+          "connects": [
+            "point_78",
+            "point_79"
+          ],
+          "id": "nerve_feature_46",
+          "label": "pyloric branch of greater posterior gastric nerve",
+          "models": "http://uri.interlex.org/base/ilx_0794460"
+        },
+        {
+          "connects": [
+            "point_80",
+            "point_81"
+          ],
           "id": "nerve_feature_47",
-          "label": "right unknown branch of vagus nerve",
-          "models": "http://uri.interlex.org/base/ilx_0793923"
+          "label": "superior branch of left internal laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0785786"
+        },
+        {
+          "connects": [
+            "point_82",
+            "point_83"
+          ],
+          "id": "nerve_feature_48",
+          "label": "superior cervical cardiac branch of left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0791998"
+        },
+        {
+          "connects": [
+            "point_84",
+            "point_85"
+          ],
+          "id": "nerve_feature_49",
+          "label": "thoracic cardiac branch of left vagus nerve",
+          "models": "http://uri.interlex.org/base/ilx_0791489"
+        },
+        {
+          "connects": [
+            "point_86",
+            "point_87"
+          ],
+          "id": "nerve_feature_50",
+          "label": "tracheal branch of left recurrent laryngeal nerve",
+          "models": "http://uri.interlex.org/base/ilx_0785091"
         }
       ],
       "id": "vagus",
