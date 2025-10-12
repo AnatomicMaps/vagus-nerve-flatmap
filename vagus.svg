@@ -1,8 +1,5 @@
 <?xml version="1.0" ?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="-17 36 55 524">
-	<rect x="-17" y="36" width="55" height="-47" fill="red">
-		<title>.id(brain_region)</title>
-	</rect>
 	<rect x="-17" y="-11" width="55" height="146" fill="green">
 		<title>.id(cervical_region)</title>
 	</rect>

@@ -1,8 +1,5 @@
 {
   "features": {
-    "brain_region": {
-      "name": "Brain"
-    },
     "cervical_region": {
       "name": "Cervical C1-C7"
     },
@@ -11,43 +8,43 @@
     },
     "marker_10001": {
       "colour": "orange",
-      "label": "Label 'right level of superior border of jugular foramen on the vagus nerve' for term 'UBERON:9999165' was not found during lookup.",
-      "models": "UBERON:9999165"
+      "label": "Label 'right level of superior border of jugular foramen on the vagus nerve' for term 'UBERON:9901949' was not found during lookup.",
+      "models": "UBERON:9901949"
     },
     "marker_10002": {
       "colour": "orange",
-      "label": "Label 'right level of inferior border of jugular foramen on the vagus nerve' for term 'UBERON:9943017' was not found during lookup.",
-      "models": "UBERON:9943017"
+      "label": "Label 'right level of inferior border of jugular foramen on the vagus nerve' for term 'UBERON:9936515' was not found during lookup.",
+      "models": "UBERON:9936515"
     },
     "marker_10003": {
       "colour": "orange",
-      "label": "Label 'right level of angle of the mandible on the vagus nerve' for term 'UBERON:9977683' was not found during lookup.",
-      "models": "UBERON:9977683"
+      "label": "Label 'right level of angle of the mandible on the vagus nerve' for term 'UBERON:9979349' was not found during lookup.",
+      "models": "UBERON:9979349"
     },
     "marker_10004": {
       "colour": "orange",
-      "label": "Label 'right level of carotid bifurcation on the vagus nerve' for term 'UBERON:9965474' was not found during lookup.",
-      "models": "UBERON:9965474"
+      "label": "Label 'right level of carotid bifurcation on the vagus nerve' for term 'UBERON:9963246' was not found during lookup.",
+      "models": "UBERON:9963246"
     },
     "marker_10005": {
       "colour": "orange",
-      "label": "Label 'right level of laryngeal prominence on the vagus nerve' for term 'UBERON:9973099' was not found during lookup.",
-      "models": "UBERON:9973099"
+      "label": "Label 'right level of laryngeal prominence on the vagus nerve' for term 'UBERON:9976220' was not found during lookup.",
+      "models": "UBERON:9976220"
     },
     "marker_10006": {
       "colour": "orange",
-      "label": "Label 'right level of superior border of the clavicle on the vagus nerve' for term 'UBERON:9981543' was not found during lookup.",
-      "models": "UBERON:9981543"
+      "label": "Label 'right level of superior border of the clavicle on the vagus nerve' for term 'UBERON:9904073' was not found during lookup.",
+      "models": "UBERON:9904073"
     },
     "marker_10007": {
       "colour": "orange",
-      "label": "Label 'right level of jugular notch on the vagus nerve' for term 'UBERON:9908787' was not found during lookup.",
-      "models": "UBERON:9908787"
+      "label": "Label 'right level of jugular notch on the vagus nerve' for term 'UBERON:9944839' was not found during lookup.",
+      "models": "UBERON:9944839"
     },
     "marker_10008": {
       "colour": "orange",
-      "label": "Label 'right level of sternal angle on the vagus nerve' for term 'UBERON:9949466' was not found during lookup.",
-      "models": "UBERON:9949466"
+      "label": "Label 'right level of sternal angle on the vagus nerve' for term 'UBERON:9965777' was not found during lookup.",
+      "models": "UBERON:9965777"
     },
     "nerve_feature_01": {
       "label": "Label '.scene_selection' for term '<missing-annotation>' was not found during lookup."
