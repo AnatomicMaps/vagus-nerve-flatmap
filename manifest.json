@@ -4,7 +4,7 @@
   "kind": "centreline",
   "models": "UBERON:0001759",
   "properties": "properties.json",
-  "sckan-version": "sckan-2024-03-26",
+  "sckan-version": "sckan-2025-09-14",
   "sources": [
     {
       "href": "vagus.svg",
