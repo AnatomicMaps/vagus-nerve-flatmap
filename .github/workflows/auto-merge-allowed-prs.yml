@@ -17,23 +17,48 @@ jobs:
 
     steps:
       - name: Check for 'auto-merge' label and all checks passing
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo, number } = context.issue;
+            const tttt = checks.data.check_runs(run => run.conclusion);
+            console.log(tttt);
 
-            const pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
+            const maxRetries = 5;
+            let retryCount = 0;
+            let pr;
+            let mergeableState;
 
-            const hasAutoMergeLabel = pr.data.labels.some(label => label.name === "auto-merge");
+            do {
+              pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
+              mergeableState = pr.data.mergeable_state;
 
-            if (!hasAutoMergeLabel) {
-              console.log("❌ 'auto-merge' label not present. Skipping merge.");
-              return;
+              if (mergeableState === 'clean') {
+                console.log("✅ PR mergeable state is clean.");
+                break; // Continue to check other requirements
+              }
+
+              if (mergeableState === 'dirty' || mergeableState === 'conflicting') {
+                console.log("❌ PR has merge conflicts (or is currently dirty). Cannot auto-merge.");
+                return; // Stop the workflow
+              }
+
+              // 'unknown', 'behind', 'draft', or 'unstable' can be intermediate
+              console.log(`⏱️ PR mergeable state is ${mergeableState}. Retrying... (${retryCount + 1}/${maxRetries})`);
+              await new Promise(resolve => setTimeout(resolve, 5000)); // Wait 5 seconds
+              retryCount++;
+
+            } while (retryCount < maxRetries);
+
+            if (mergeableState !== 'clean') {
+               console.log(`❌ Failsafe: PR mergeable state is still ${mergeableState}. Skipping merge.`);
+               return;
             }
 
-            if (pr.data.mergeable_state !== "clean") {
-              console.log("❌ PR is not in a clean, mergeable state:", pr.data.mergeable_state);
+            const hasAutoMergeLabel = pr.data.labels.some(label => label.name === "auto-merge");
+            if (!hasAutoMergeLabel) {
+              console.log("❌ 'auto-merge' label not present. Skipping merge.");
               return;
             }
 
@@ -43,19 +68,36 @@ jobs:
               ref: pr.data.head.sha,
             });
 
-            const allPassed = checks.data.check_runs.every(run => run.conclusion === "success");
+            // The name must exactly match the 'name:' defined at the top of your workflow file.
+            const currentWorkflowName = 'Auto-merge PRs with only allowed changes';
 
-            if (!allPassed) {
-              console.log("❌ Not all required checks have passed.");
-              return;
-            }
-
-            await github.rest.pulls.merge({
-              owner,
-              repo,
-              pull_number: number,
-              merge_method: "merge", // or 'squash' or 'rebase'
+            const filteredCheckRuns = checks.data.check_runs.filter(run => {
+              // We only care about checks that are NOT this workflow
+              return run.name !== currentWorkflowName;
             });
 
-            console.log("✅ PR automatically merged.");
+            if (filteredCheckRuns.length === 0) {
+              console.log("⚠️ No other status checks were found. Proceeding with caution.");
+              // Handle this edge case as you see fit. Some repos require at least one other check.
+            } else {
+              // Now ensure ALL OTHER checks have concluded successfully
+              const allPassed = filteredCheckRuns.every(run => run.conclusion === "success");
 
+              if (!allPassed) {
+                console.log("❌ Not all OTHER required checks have passed.");
+                return;
+              }
+            }
+
+            // --- 4. Attempt the merge ---
+            try {
+              await github.rest.pulls.merge({
+                owner,
+                repo,
+                pull_number: number,
+                merge_method: "merge", // or 'squash' or 'rebase'
+              });
+              console.log("✅ PR automatically merged.");
+            } catch (error) {
+              console.error("❌ Failed to merge the PR:", error);
+            }
