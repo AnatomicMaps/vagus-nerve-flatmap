@@ -71,14 +71,6 @@ jobs:
             let pr;
             let mergeableState;
 
-            // This is a quick check that can fail fast.
-            pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
-            const hasAutoMergeLabel = pr.data.labels.some(label => label.name === "auto-merge");
-            if (!hasAutoMergeLabel) {
-              console.log("❌ 'auto-merge' label not present. Skipping merge.");
-              return;
-            }
-
             do {
               // Re-fetch to get up-to-date mergeable_state
               pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
