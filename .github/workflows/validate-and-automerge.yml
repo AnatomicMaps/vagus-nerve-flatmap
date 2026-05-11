@@ -101,28 +101,33 @@ jobs:
           script: |
             const { owner, repo, number } = context.issue;
             
-            const maxRetries = 5;
+            const maxRetries = 3;
             let retryCount = 0;
             let pr;
-            let mergeableState;
+            let mergeableState = false;
 
             do {
               pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
-              console.log('PR Data:')
-              console.log(pr.data)
-              mergeableState = pr.data.mergeable_state;
-              if (mergeableState === 'clean') break;
-              if (['dirty', 'conflicting'].includes(mergeableState)) return;
+              if (pr.data.mergeable) {
+                mergeableState = true
+                break;
+              }
               
               await new Promise(r => setTimeout(r, 5000));
               retryCount++;
             } while (retryCount < maxRetries);
 
-            try {
-              await github.rest.pulls.merge({
-                owner, repo, pull_number: number, merge_method: "merge"
-              });
-              console.log("✅ PR automatically merged.");
-            } catch (e) {
-              console.error("❌ Merge failed:", e);
+            if (mergeableState) {
+              try {
+                await github.rest.pulls.merge({
+                  owner, repo, pull_number: number, merge_method: "merge"
+                });
+                console.log("✅ PR automatically merged.");
+              } catch (e) {
+                console.error("❌ Merge failed:", e);
+                process.exit(1)
+              }
+            } else {
+              console.error("❌ Code changes not in a mergeable state.", e)
+              process.exit(1)
             }
