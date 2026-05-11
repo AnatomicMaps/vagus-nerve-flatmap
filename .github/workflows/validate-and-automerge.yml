@@ -121,3 +121,9 @@ jobs:
               console.error(error.message);
               process.exit(1);
             }
+            
+  publish:
+    name: Trigger Publish
+    needs: automerge
+    if: success()
+    uses: ./.github/workflows/publish-to-server.yaml
