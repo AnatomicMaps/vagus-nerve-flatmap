@@ -129,4 +129,8 @@ jobs:
     uses: ./.github/workflows/publish-to-server.yaml
     with:
       target_branch: ${{ github.event.pull_request.base.ref }}
-    secrets: inherit
+    secrets:
+      CURATION_SERVER_TOKEN: ${{ secrets.CURATION_SERVER_TOKEN }}
+      DEVEL_MAP_SERVER: ${{ secrets.DEVEL_MAP_SERVER }}
+      PRODUCTION_SERVER_TOKEN: ${{ secrets.PRODUCTION_SERVER_TOKEN }}
+      STAGING_MAP_SERVER: ${{ secrets.STAGING_MAP_SERVER }}
