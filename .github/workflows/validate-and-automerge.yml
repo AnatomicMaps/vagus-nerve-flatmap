@@ -108,6 +108,8 @@ jobs:
 
             do {
               pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
+              console.log('PR Data:')
+              console.log(pr.data)
               mergeableState = pr.data.mergeable_state;
               if (mergeableState === 'clean') break;
               if (['dirty', 'conflicting'].includes(mergeableState)) return;
