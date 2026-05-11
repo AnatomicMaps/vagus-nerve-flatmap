@@ -131,6 +131,6 @@ jobs:
       target_branch: ${{ github.event.pull_request.base.ref }}
     secrets:
       CURATION_SERVER_TOKEN: ${{ secrets.CURATION_SERVER_TOKEN }}
-      DEVEL_MAP_SERVER: ${{ secrets.DEVEL_MAP_SERVER }}
+      DEVEL_SERVER_TOKEN: ${{ secrets.DEVEL_SERVER_TOKEN }}
       PRODUCTION_SERVER_TOKEN: ${{ secrets.PRODUCTION_SERVER_TOKEN }}
-      STAGING_MAP_SERVER: ${{ secrets.STAGING_MAP_SERVER }}
+      STAGING_SERVER_TOKEN: ${{ secrets.STAGING_SERVER_TOKEN }}
