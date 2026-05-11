@@ -8,6 +8,11 @@ on:
       - release
   workflow_dispatch:
   workflow_call:
+    inputs:
+      target_branch:
+        description: 'The branch to deploy from'
+        required: true
+        type: string
 
 jobs:
   generate-map:
@@ -23,7 +28,7 @@ jobs:
           python -m pip install ${{ vars.REMOTE_MAKER_WHEEL }}
       - name: run remotemaker
         run: |
-          commit=${{ github.ref_name }}
+          commit=${{ inputs.target_branch || github.ref_name }}
           if [[ "curation" == "${commit}" ]]; then
             server=${{ vars.CURATION_MAP_SERVER }}
             token=${{ secrets.CURATION_SERVER_TOKEN }}
