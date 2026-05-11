@@ -128,6 +128,6 @@ jobs:
                 process.exit(1)
               }
             } else {
-              console.error("❌ Code changes not in a mergeable state.", e)
+              console.error("❌ Code changes not in a mergeable state.")
               process.exit(1)
             }
