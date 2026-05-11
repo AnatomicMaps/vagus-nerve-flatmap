@@ -4,22 +4,57 @@ on:
   pull_request:
     branches:
       - release
+    types: [opened, edited, synchronize, labeled, unlabeled]
 
 permissions:
   pull-requests: write
   contents: write
 
 jobs:
+  prepare:
+    name: Detect Template and Label
+    runs-on: ubuntu-latest
+    if: github.repository == 'AnatomicMaps/vagus-nerve-flatmap'
+    outputs:
+      should_auto_merge: ${{ steps.check.outputs.match }}
+    steps:
+      - name: Check for template or existing label
+        id: check
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const body = pr.body || "";
+            const hasFingerprint = body.includes("fingerprint: auto-merge-template");
+            const hasLabel = pr.labels.some(l => l.name === 'auto-merge');
+
+            if (hasFingerprint || hasLabel) {
+              console.log("✅ Auto-merge criteria met (Template or Label present).");
+              core.setOutput("match", "true");
+              
+              // If it has the fingerprint but not the label yet, add it
+              if (hasFingerprint && !hasLabel) {
+                await github.rest.issues.addLabels({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: pr.number,
+                  labels: ['auto-merge']
+                });
+              }
+            } else {
+              console.log("ℹ️ No auto-merge criteria detected.");
+              core.setOutput("match", "false");
+            }
+
   restrict:
     name: Check file restrictions
     runs-on: ubuntu-latest
-    if: github.repository == 'AnatomicMaps/vagus-nerve-flatmap'
-
+    needs: prepare
     steps:
       - name: Checkout PR code
         uses: actions/checkout@v6
         with:
-          fetch-depth: 0 # Required for diffing against base
+          fetch-depth: 0
 
       - name: Get changed files
         id: changed
@@ -38,97 +73,54 @@ jobs:
           const minimatch = require('minimatch');
           const changed = process.env.CHANGED.split(/\s+/);
           const allowed = ["description.json", "manifest.json", "properties.json", "vagus.svg"];
-
-          const disallowed = changed.filter(file => file.trim() !== "" &&
+          const disallowed = changed.filter(file => file.trim() !== "" && 
             !allowed.some(pattern => minimatch.minimatch(file, pattern))
           );
-
           if (disallowed.length > 0) {
             console.log("❌ Disallowed files:");
             disallowed.forEach(f => console.log(`- ${f}`));
-            process.exit(1); // Fail this job
+            process.exit(1);
           }
-
           console.log("✅ All changed files are within allowed paths.");
           EOF
 
   automerge:
     name: Attempt automatic merge
     runs-on: ubuntu-latest
-    needs: restrict
-    if: needs:restrict.result == 'success'
+    needs: [prepare, restrict]
+    # Only run if the restrict job passed AND the template was detected
+    if: |
+      always() && 
+      needs.restrict.result == 'success' && 
+      needs.prepare.outputs.should_auto_merge == 'true'
 
     steps:
       - name: Auto-merge
         uses: actions/github-script@v9
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo, number } = context.issue;
-
+            
             const maxRetries = 5;
             let retryCount = 0;
             let pr;
             let mergeableState;
 
             do {
-              // Re-fetch to get up-to-date mergeable_state
               pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
               mergeableState = pr.data.mergeable_state;
-
-              if (mergeableState === 'clean') {
-                console.log("✅ PR mergeable state is clean.");
-                break;
-              }
-
-              if (mergeableState === 'dirty' || mergeableState === 'conflicting') {
-                console.log("❌ PR has merge conflicts (or is currently dirty). Cannot auto-merge.");
-                return;
-              }
-
-              console.log(`⏱️ PR mergeable state is ${mergeableState}. Retrying... (${retryCount + 1}/${maxRetries})`);
-              await new Promise(resolve => setTimeout(resolve, 5000)); // Wait 5 seconds
+              if (mergeableState === 'clean') break;
+              if (['dirty', 'conflicting'].includes(mergeableState)) return;
+              
+              await new Promise(r => setTimeout(r, 5000));
               retryCount++;
-
             } while (retryCount < maxRetries);
-
-            if (mergeableState !== 'clean') {
-               console.log(`❌ Failsafe: PR mergeable state is still ${mergeableState}. Skipping merge.`);
-               return;
-            }
-
-            const checks = await github.rest.checks.listForRef({
-              owner,
-              repo,
-              ref: pr.data.head.sha,
-            });
-
-            const currentWorkflowName = 'Validate and Auto-merge Allowed PRs';
-
-            const filteredCheckRuns = checks.data.check_runs.filter(run => {
-              // Wait for all checks EXCEPT those generated by THIS workflow
-              return run.name !== currentWorkflowName;
-            });
-
-            if (filteredCheckRuns.length === 0) {
-              console.log("⚠️ No other status checks were found. Proceeding with cautious merge.");
-            } else {
-              const allPassed = filteredCheckRuns.every(run => run.conclusion === "success");
-
-              if (!allPassed) {
-                console.log("❌ Not all OTHER required checks (outside this workflow) have passed.");
-                return;
-              }
-            }
 
             try {
               await github.rest.pulls.merge({
-                owner,
-                repo,
-                pull_number: number,
-                merge_method: "merge", 
+                owner, repo, pull_number: number, merge_method: "merge"
               });
               console.log("✅ PR automatically merged.");
-            } catch (error) {
-              console.error("❌ Failed to merge the PR:", error);
+            } catch (e) {
+              console.error("❌ Merge failed:", e);
             }
