@@ -1,7 +1,8 @@
 name: Validate and Auto-merge Allowed PRs
 
 on:
-  pull_request:
+  # Using pull_request_target grants Write permissions for forks
+  pull_request_target:
     branches:
       - release
     types: [opened, edited, synchronize, labeled, unlabeled]
@@ -29,10 +30,7 @@ jobs:
             const hasLabel = pr.labels.some(l => l.name === 'auto-merge');
 
             if (hasFingerprint || hasLabel) {
-              console.log("✅ Auto-merge criteria met (Template or Label present).");
               core.setOutput("match", "true");
-              
-              // If it has the fingerprint but not the label yet, add it
               if (hasFingerprint && !hasLabel) {
                 await github.rest.issues.addLabels({
                   owner: context.repo.owner,
@@ -42,7 +40,6 @@ jobs:
                 });
               }
             } else {
-              console.log("ℹ️ No auto-merge criteria detected.");
               core.setOutput("match", "false");
             }
 
@@ -51,84 +48,76 @@ jobs:
     runs-on: ubuntu-latest
     needs: prepare
     steps:
-      - name: Checkout PR code
+      - name: Checkout Base Branch (Release)
         uses: actions/checkout@v6
         with:
-          fetch-depth: 0
+          ref: ${{ github.event.pull_request.base.ref }}
 
-      - name: Get changed files
-        id: changed
+      - name: Fetch PR Changes
         run: |
-          echo "files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | tr '\n' ' ')" >> $GITHUB_OUTPUT
+          git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge:pr-content
+          git checkout pr-content
 
       - name: Install dependencies
         run: npm install minimatch
 
-      - name: Restrict changed files to allowed paths
+      - name: Restrict changed files
         id: validate
-        env:
-          CHANGED: ${{ steps.changed.outputs.files }}
         run: |
-          node <<'EOF'
+          # Use git diff against the base branch to see what the PR changed
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD | tr '\n' ' ')
+          
+          node <<EOF
           const minimatch = require('minimatch');
-          const changed = process.env.CHANGED.split(/\s+/);
+          const changed = "$CHANGED_FILES".split(/\s+/);
           const allowed = ["description.json", "manifest.json", "properties.json", "vagus.svg"];
           const disallowed = changed.filter(file => file.trim() !== "" && 
             !allowed.some(pattern => minimatch.minimatch(file, pattern))
           );
           if (disallowed.length > 0) {
-            console.log("❌ Disallowed files:");
-            disallowed.forEach(f => console.log(`- ${f}`));
+            console.log("❌ Disallowed files: " + disallowed.join(", "));
             process.exit(1);
           }
-          console.log("✅ All changed files are within allowed paths.");
+          console.log("✅ Validation passed.");
           EOF
 
   automerge:
     name: Attempt automatic merge
     runs-on: ubuntu-latest
     needs: [prepare, restrict]
-    # Only run if the restrict job passed AND the template was detected
     if: |
       always() && 
       needs.restrict.result == 'success' && 
       needs.prepare.outputs.should_auto_merge == 'true'
-
     steps:
-      - name: Auto-merge
+      - name: Auto-merge via API
         uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const { owner, repo, number } = context.issue;
-            
-            const maxRetries = 3;
-            let retryCount = 0;
-            let pr;
-            let mergeableState = false;
+            const { owner, repo } = context.repo;
+            const number = context.payload.pull_request.number;
 
-            do {
-              pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
-              if (pr.data.mergeable) {
-                mergeableState = true
-                break;
-              }
-              
-              await new Promise(r => setTimeout(r, 5000));
-              retryCount++;
-            } while (retryCount < maxRetries);
+            await new Promise(r => setTimeout(r, 5000));
 
-            if (mergeableState) {
-              try {
-                await github.rest.pulls.merge({
-                  owner, repo, pull_number: number, merge_method: "merge"
-                });
-                console.log("✅ PR automatically merged.");
-              } catch (e) {
-                console.error("❌ Merge failed:", e);
-                process.exit(1)
-              }
-            } else {
+            const pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
+
+            const mergeable = pr.data.mergeable
+            if (!mergeable) {
               console.error("❌ Code changes not in a mergeable state.")
               process.exit(1)
+            }
+            
+            try {
+              await github.rest.pulls.merge({
+                owner,
+                repo,
+                pull_number: number,
+                merge_method: "merge"
+              });
+              console.log("✅ Successfully merged fork PR.");
+            } catch (error) {
+              console.error("❌ Merge failed:")
+              console.error(error.message);
+              process.exit(1);
             }
