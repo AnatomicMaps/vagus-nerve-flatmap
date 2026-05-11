@@ -127,3 +127,5 @@ jobs:
     needs: automerge
     if: success()
     uses: ./.github/workflows/publish-to-server.yaml
+    with:
+      target_branch: ${{ github.event.pull_request.base.ref }}
