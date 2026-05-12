@@ -5,7 +5,7 @@ on:
   pull_request_target:
     branches:
       - release
-    types: [opened, edited, synchronize, labeled, unlabeled]
+    types: [opened, edited, synchronize, labeled]
 
 permissions:
   pull-requests: write
