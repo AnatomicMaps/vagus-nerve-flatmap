@@ -111,6 +111,22 @@ jobs:
               console.log("✅ Successfully merged PR.");
             } catch (error) {
               console.error("❌ Merge failed:")
-              console.error(error.message);
+              console.error(error);
               process.exit(1);
             }
+
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        # Use this to keep the session alive even if previous steps failed
+        if: always()
+        
+  publish:
+    name: Trigger Publish
+    needs: automerge
+    if: success()
+    uses: ./.github/workflows/publish-to-server.yaml
+    with:
+      target_branch: ${{ github.event.pull_request.base.ref }}
+    secrets: inherit
