@@ -129,4 +129,3 @@ jobs:
     uses: ./.github/workflows/publish-to-server.yaml
     with:
       target_branch: ${{ github.event.pull_request.base.ref }}
-    secrets: inherit
