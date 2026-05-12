@@ -87,6 +87,8 @@ jobs:
       needs.prepare.outputs.should_auto_merge == 'true'
     steps:
       - name: Debug Token Permissions
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           echo "Checking permissions for: $(gh auth setup-token && gh api user -q .login)"
           echo "--- Scopes ---"
