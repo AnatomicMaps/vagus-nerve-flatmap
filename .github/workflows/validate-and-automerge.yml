@@ -27,10 +27,11 @@ jobs:
             const pr = context.payload.pull_request;
             const body = pr.body || "";
             const hasFingerprint = body.includes("fingerprint: auto-merge-template");
+            const hasAutomerge = body.includes("auto-merge")
             const hasLabel = pr.labels.some(l => l.name === 'auto-merge');
-            if (hasFingerprint || hasLabel) {
+            if (hasFingerprint || hasLabel || hasAutomerge) {
               core.setOutput("match", "true");
-              if (hasFingerprint && !hasLabel) {
+              if ((hasFingerprint || hasAutomerge ) && !hasLabel) {
                 await github.rest.issues.addLabels({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
