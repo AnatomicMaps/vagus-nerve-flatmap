@@ -90,13 +90,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          echo "Checking permissions for: $(gh auth setup-token && gh api user -q .login)"
+          echo "--- Identity ---"
+          gh auth status
           echo "--- Scopes ---"
           # This will show you exactly what scopes the token has
-          gh api -i / | grep -i "x-accepted-github-permissions" || true
-          echo "--- Test Mergeability ---"
-          # This tests the merge endpoint without actually merging (using a GET)
-          gh api repos/${{ github.repository }}/pulls/${{ github.event.pull_request.number }} --jq '.mergeable_state'
+          curl -sI -H "Authorization: token $GH_TOKEN" https://api.github.com/ | grep -i "x-accepted-github-permissions" || true
+
+          echo "--- Pull Request State ---"
+          gh pr view ${{ github.event.pull_request.number }} --json mergeable,mergeStateStatus,labels
           
       - name: Auto-merge via API
         uses: actions/github-script@v9
@@ -120,7 +121,7 @@ jobs:
                 pull_number: number,
                 merge_method: "merge"
               });
-              console.log("✅ Successfully merged fork PR.");
+              console.log("✅ Successfully merged PR.");
             } catch (error) {
               console.error("❌ Merge failed:")
               console.error(error.message);
