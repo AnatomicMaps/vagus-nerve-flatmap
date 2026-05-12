@@ -85,20 +85,7 @@ jobs:
       always() && 
       needs.restrict.result == 'success' && 
       needs.prepare.outputs.should_auto_merge == 'true'
-    steps:
-      - name: Debug Token Permissions
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          echo "--- Identity ---"
-          gh auth status
-          echo "--- Scopes ---"
-          # This will show you exactly what scopes the token has
-          curl -sI -H "Authorization: token $GH_TOKEN" https://api.github.com/ | grep -i "x-accepted-github-permissions" || true
-
-          echo "--- Pull Request State ---"
-          gh pr view ${{ github.event.pull_request.number }} --json mergeable,mergeStateStatus,labels
-          
+    steps:          
       - name: Auto-merge via API
         uses: actions/github-script@v9
         with:
@@ -127,9 +114,3 @@ jobs:
               console.error(error.message);
               process.exit(1);
             }
-            
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
-        # Use this to keep the session alive even if previous steps failed
-        if: always()
-        
