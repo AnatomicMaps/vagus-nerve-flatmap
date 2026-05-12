@@ -28,7 +28,6 @@ jobs:
             const body = pr.body || "";
             const hasFingerprint = body.includes("fingerprint: auto-merge-template");
             const hasLabel = pr.labels.some(l => l.name === 'auto-merge');
-
             if (hasFingerprint || hasLabel) {
               core.setOutput("match", "true");
               if (hasFingerprint && !hasLabel) {
@@ -57,7 +56,6 @@ jobs:
         run: |
           git fetch origin +refs/pull/${{ github.event.pull_request.number }}/merge:pr-content
           git checkout pr-content
-
       - name: Install dependencies
         run: npm install minimatch
 
@@ -89,19 +87,16 @@ jobs:
       always() && 
       needs.restrict.result == 'success' && 
       needs.prepare.outputs.should_auto_merge == 'true'
-    steps:
+    steps:          
       - name: Auto-merge via API
         uses: actions/github-script@v9
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ github.token }}
           script: |
             const { owner, repo } = context.repo;
             const number = context.payload.pull_request.number;
-
             await new Promise(r => setTimeout(r, 5000));
-
             const pr = await github.rest.pulls.get({ owner, repo, pull_number: number });
-
             const mergeable = pr.data.mergeable
             if (!mergeable) {
               console.error("❌ Code changes not in a mergeable state.")
@@ -115,15 +110,18 @@ jobs:
                 pull_number: number,
                 merge_method: "merge"
               });
-              console.log("✅ Successfully merged fork PR.");
+              console.log("✅ Successfully merged PR.");
             } catch (error) {
               console.error("❌ Merge failed:")
-              console.error(error.message);
+              console.error(error);
               process.exit(1);
             }
-            
+        
   publish:
     name: Trigger Publish
     needs: automerge
     if: success()
     uses: ./.github/workflows/publish-to-server.yaml
+    with:
+      target_branch: ${{ github.event.pull_request.base.ref }}
+    secrets: inherit
