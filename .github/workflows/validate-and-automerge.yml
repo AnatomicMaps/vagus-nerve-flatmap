@@ -102,7 +102,7 @@ jobs:
       - name: Auto-merge via API
         uses: actions/github-script@v9
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ github.token }}
           script: |
             const { owner, repo } = context.repo;
             const number = context.payload.pull_request.number;
