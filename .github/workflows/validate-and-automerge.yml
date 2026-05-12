@@ -126,7 +126,7 @@ jobs:
             }
             
       - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v4
+        uses: mxschmitt/action-tmate@v3
         # Use this to keep the session alive even if previous steps failed
         if: always()
         
