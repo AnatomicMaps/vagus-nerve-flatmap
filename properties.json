@@ -11,196 +11,196 @@
     },
     "marker_10001": {
       "colour": "orange",
-      "label": "Label 'left level of superior border of jugular foramen on the vagus nerve' for term 'UBERON:9959744' was not found during lookup.",
-      "models": "UBERON:9959744"
+      "label": "Label 'right level of superior border of jugular foramen on the vagus nerve' for term 'UBERON:9954901' was not found during lookup.",
+      "models": "UBERON:9954901"
     },
     "marker_10002": {
       "colour": "orange",
-      "label": "Label 'left level of inferior border of jugular foramen on the vagus nerve' for term 'UBERON:9979558' was not found during lookup.",
-      "models": "UBERON:9979558"
+      "label": "Label 'right level of inferior border of jugular foramen on the vagus nerve' for term 'UBERON:9999089' was not found during lookup.",
+      "models": "UBERON:9999089"
     },
     "marker_10003": {
       "colour": "orange",
-      "label": "Label 'left level of angle of the mandible on the vagus nerve' for term 'UBERON:9962844' was not found during lookup.",
-      "models": "UBERON:9962844"
+      "label": "Label 'right level of angle of the mandible on the vagus nerve' for term 'UBERON:9975725' was not found during lookup.",
+      "models": "UBERON:9975725"
     },
     "marker_10004": {
       "colour": "orange",
-      "label": "Label 'left level of carotid bifurcation on the vagus nerve' for term 'UBERON:9969044' was not found during lookup.",
-      "models": "UBERON:9969044"
+      "label": "Label 'right level of carotid bifurcation on the vagus nerve' for term 'UBERON:9924922' was not found during lookup.",
+      "models": "UBERON:9924922"
     },
     "marker_10005": {
       "colour": "orange",
-      "label": "Label 'left level of laryngeal prominence on the vagus nerve' for term 'UBERON:9987544' was not found during lookup.",
-      "models": "UBERON:9987544"
+      "label": "Label 'right level of laryngeal prominence on the vagus nerve' for term 'UBERON:9949063' was not found during lookup.",
+      "models": "UBERON:9949063"
     },
     "marker_10006": {
       "colour": "orange",
-      "label": "Label 'left level of superior border of the clavicle on the vagus nerve' for term 'UBERON:9972883' was not found during lookup.",
-      "models": "UBERON:9972883"
+      "label": "Label 'right level of superior border of the clavicle on the vagus nerve' for term 'UBERON:9915107' was not found during lookup.",
+      "models": "UBERON:9915107"
     },
     "marker_10007": {
       "colour": "orange",
-      "label": "Label 'left level of jugular notch on the vagus nerve' for term 'UBERON:9926719' was not found during lookup.",
-      "models": "UBERON:9926719"
+      "label": "Label 'right level of jugular notch on the vagus nerve' for term 'UBERON:9934391' was not found during lookup.",
+      "models": "UBERON:9934391"
     },
     "marker_10008": {
       "colour": "orange",
-      "label": "Label 'left level of sternal angle on the vagus nerve' for term 'UBERON:9976480' was not found during lookup.",
-      "models": "UBERON:9976480"
+      "label": "Label 'right level of sternal angle on the vagus nerve' for term 'UBERON:9922885' was not found during lookup.",
+      "models": "UBERON:9922885"
     },
     "nerve_feature_01": {
-      "label": "Label 'cardiac branch A of esophageal plexus of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794918' was not found during lookup."
+      "label": "Label 'anterior A esophageal communicating branch' for term 'http://uri.interlex.org/base/ilx_0794376' was not found during lookup."
     },
     "nerve_feature_02": {
-      "label": "Label 'cardiac branch B of esophageal plexus of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794919' was not found during lookup."
-    },
-    "nerve_feature_03": {
-      "label": "Label 'cardiac branch C of esophageal plexus of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794920' was not found during lookup."
+      "label": "Label 'anterior B esophageal communicating branch' for term 'http://uri.interlex.org/base/ilx_0794377' was not found during lookup."
     },
     "nerve_feature_05": {
-      "label": "Label 'cardiovascular and cardiopulmonary branch of left vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795951' was not found during lookup."
-    },
-    "nerve_feature_07": {
-      "label": "Label 'left A branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796405' was not found during lookup."
+      "label": "Label 'esophageal plexus cardiopulmonary branches' for term 'http://uri.interlex.org/base/ilx_0796105' was not found during lookup."
     },
     "nerve_feature_08": {
-      "label": "Label 'left A branch between vagus nerve and superior root of ansa cervicalis' for term 'http://uri.interlex.org/base/ilx_0793952' was not found during lookup."
+      "label": "Label 'posterior A esophageal communicating branch' for term 'http://uri.interlex.org/base/ilx_0794382' was not found during lookup."
     },
     "nerve_feature_09": {
-      "label": "Label 'left A branch of thoracic vagus nerve to aorta' for term 'http://uri.interlex.org/base/ilx_0796496' was not found during lookup."
-    },
-    "nerve_feature_10": {
-      "label": "Label 'left A branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794311' was not found during lookup."
+      "label": "Label 'posterior B esophageal communicating branch' for term 'http://uri.interlex.org/base/ilx_0794383' was not found during lookup."
     },
     "nerve_feature_11": {
-      "label": "Label 'left A branch of vagus nerve to ipsilateral common carotid artery' for term 'http://uri.interlex.org/base/ilx_0794073' was not found during lookup."
+      "label": "Label 'right A branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796399' was not found during lookup."
     },
     "nerve_feature_12": {
-      "label": "Label 'left A cardiovascular branch of cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795235' was not found during lookup."
+      "label": "Label 'right A branch between vagus nerve and cervical spinal nerves' for term 'http://uri.interlex.org/base/ilx_0795645' was not found during lookup."
     },
     "nerve_feature_13": {
-      "label": "Label 'left A cardiovascular branch of cranial nerve bundle' for term 'http://uri.interlex.org/base/ilx_0795541' was not found during lookup."
+      "label": "Label 'right A branch between vagus nerve and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0794056' was not found during lookup."
     },
     "nerve_feature_14": {
-      "label": "Label 'left A lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794289' was not found during lookup."
+      "label": "Label 'right A branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794300' was not found during lookup."
     },
     "nerve_feature_15": {
-      "label": "Label 'left A medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794266' was not found during lookup."
+      "label": "Label 'right A branch of vagus nerve to ipsilateral carotid sinus' for term 'http://uri.interlex.org/base/ilx_0794109' was not found during lookup."
     },
     "nerve_feature_16": {
-      "label": "Label 'left B branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796406' was not found during lookup."
+      "label": "Label 'right A cardiovascular branch of thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795250' was not found during lookup."
     },
     "nerve_feature_17": {
-      "label": "Label 'left B branch between vagus nerve and carotid sinus nerve' for term 'http://uri.interlex.org/base/ilx_0794126' was not found during lookup."
+      "label": "Label 'right A cervical cardiopulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794154' was not found during lookup."
     },
     "nerve_feature_18": {
-      "label": "Label 'left B branch between vagus nerve and superior root of ansa cervicalis' for term 'http://uri.interlex.org/base/ilx_0793953' was not found during lookup."
+      "label": "Label 'right A lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794278' was not found during lookup."
     },
     "nerve_feature_19": {
-      "label": "Label 'left B branch of thoracic vagus nerve to aorta' for term 'http://uri.interlex.org/base/ilx_0796497' was not found during lookup."
+      "label": "Label 'right A medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794255' was not found during lookup."
     },
     "nerve_feature_20": {
-      "label": "Label 'left B branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794312' was not found during lookup."
+      "label": "Label 'right A thoracic cardiopulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794181' was not found during lookup."
     },
     "nerve_feature_21": {
-      "label": "Label 'left B branch of vagus nerve to ipsilateral common carotid artery' for term 'http://uri.interlex.org/base/ilx_0794074' was not found during lookup."
+      "label": "Label 'right B branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796400' was not found during lookup."
     },
     "nerve_feature_22": {
-      "label": "Label 'left B cardiovascular branch of cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0795236' was not found during lookup."
+      "label": "Label 'right B branch between vagus nerve and cervical spinal nerves' for term 'http://uri.interlex.org/base/ilx_0795646' was not found during lookup."
     },
     "nerve_feature_23": {
-      "label": "Label 'left B cardiovascular branch of cranial nerve bundle' for term 'http://uri.interlex.org/base/ilx_0795542' was not found during lookup."
+      "label": "Label 'right B branch between vagus nerve and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0794057' was not found during lookup."
     },
     "nerve_feature_24": {
-      "label": "Label 'left B lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794290' was not found during lookup."
+      "label": "Label 'right B branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794301' was not found during lookup."
     },
     "nerve_feature_25": {
-      "label": "Label 'left B medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794267' was not found during lookup."
+      "label": "Label 'right B branch of vagus nerve to ipsilateral carotid sinus' for term 'http://uri.interlex.org/base/ilx_0794110' was not found during lookup."
     },
     "nerve_feature_26": {
-      "label": "Label 'left C branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796407' was not found during lookup."
+      "label": "Label 'right B cervical cardiopulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794155' was not found during lookup."
     },
     "nerve_feature_27": {
-      "label": "Label 'left C branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794313' was not found during lookup."
+      "label": "Label 'right B lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794279' was not found during lookup."
     },
     "nerve_feature_28": {
-      "label": "Label 'left C lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794291' was not found during lookup."
+      "label": "Label 'right B medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794256' was not found during lookup."
     },
     "nerve_feature_29": {
-      "label": "Label 'left D branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794314' was not found during lookup."
+      "label": "Label 'right B thoracic cardiopulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794182' was not found during lookup."
     },
     "nerve_feature_30": {
-      "label": "Label 'left D lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794292' was not found during lookup."
+      "label": "Label 'right C branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796401' was not found during lookup."
     },
     "nerve_feature_31": {
-      "label": "Label 'left E branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794315' was not found during lookup."
+      "label": "Label 'right C branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794302' was not found during lookup."
     },
     "nerve_feature_32": {
-      "label": "Label 'left E lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794293' was not found during lookup."
+      "label": "Label 'right C lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794280' was not found during lookup."
     },
     "nerve_feature_33": {
-      "label": "Label 'left F branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794316' was not found during lookup."
+      "label": "Label 'right C medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794257' was not found during lookup."
     },
     "nerve_feature_34": {
-      "label": "Label 'left F lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794294' was not found during lookup."
+      "label": "Label 'right D branch between cranial nerve bundle and superior cervical ganglion' for term 'http://uri.interlex.org/base/ilx_0796402' was not found during lookup."
     },
     "nerve_feature_35": {
-      "label": "Label 'left G branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794317' was not found during lookup."
+      "label": "Label 'right D branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794303' was not found during lookup."
     },
     "nerve_feature_36": {
-      "label": "Label 'left G lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794295' was not found during lookup."
+      "label": "Label 'right D lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794281' was not found during lookup."
     },
     "nerve_feature_37": {
-      "label": "Label 'left H branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794318' was not found during lookup."
+      "label": "Label 'right D medial pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794258' was not found during lookup."
     },
     "nerve_feature_38": {
-      "label": "Label 'left I branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794319' was not found during lookup."
+      "label": "Label 'right E branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794304' was not found during lookup."
     },
     "nerve_feature_39": {
-      "label": "Label 'left J branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794320' was not found during lookup."
+      "label": "Label 'right E lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794282' was not found during lookup."
     },
     "nerve_feature_40": {
-      "label": "Label 'left K branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0796056' was not found during lookup."
+      "label": "Label 'right F branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794305' was not found during lookup."
     },
     "nerve_feature_41": {
-      "label": "Label 'left L branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0796057' was not found during lookup."
+      "label": "Label 'right F lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794283' was not found during lookup."
     },
     "nerve_feature_42": {
-      "label": "Label 'left M branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0796058' was not found during lookup."
+      "label": "Label 'right G branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0794306' was not found during lookup."
     },
     "nerve_feature_43": {
-      "label": "Label 'left N branch of thoracic vagus nerve to esophagus' for term 'http://uri.interlex.org/base/ilx_0796059' was not found during lookup."
+      "label": "Label 'right G lateral pulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794284' was not found during lookup."
     },
-    "nerve_feature_45": {
-      "label": "Label 'left branch between vagus nerve and carotid sinus nerve' for term 'http://uri.interlex.org/base/ilx_0794124' was not found during lookup."
+    "nerve_feature_44": {
+      "label": "Label 'right branch between cervical vagus and inferior root of ansa cervicalis' for term 'http://uri.interlex.org/base/ilx_0795597' was not found during lookup."
     },
-    "nerve_feature_49": {
-      "label": "Label 'left branch of vagus nerve to ipsilateral carotid sinus' for term 'http://uri.interlex.org/base/ilx_0794113' was not found during lookup."
+    "nerve_feature_46": {
+      "label": "Label 'right branch between pharyngeal branch of vagus nerve and carotid sinus nerve' for term 'http://uri.interlex.org/base/ilx_0795748' was not found during lookup."
+    },
+    "nerve_feature_47": {
+      "label": "Label 'right branch between recurrent laryngeal nerve and vagal trunk' for term 'http://uri.interlex.org/base/ilx_0794228' was not found during lookup."
+    },
+    "nerve_feature_50": {
+      "label": "Label 'right branch of cervical vagus nerve to sympathetic chain, cardiovascular, and pulmonary structures' for term 'http://uri.interlex.org/base/ilx_0796411' was not found during lookup."
     },
     "nerve_feature_53": {
-      "label": "Label 'left cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794142' was not found during lookup."
+      "label": "Label 'right branch of vagus nerve to omohyoid muscle' for term 'http://uri.interlex.org/base/ilx_0795623' was not found during lookup."
     },
     "nerve_feature_54": {
-      "label": "Label 'left hypoglossal nerve' for term 'http://uri.interlex.org/base/ilx_0791765' was not found during lookup."
+      "label": "Label 'right cardiovascular branch of thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794851' was not found during lookup."
+    },
+    "nerve_feature_56": {
+      "label": "Label 'right cervical vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794141' was not found during lookup."
     },
     "nerve_feature_57": {
-      "label": "Label 'left recurrent laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0794226' was not found during lookup."
+      "label": "Label 'right external branch of superior laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0792879' was not found during lookup."
     },
     "nerve_feature_58": {
-      "label": "Label 'left spinal accessory nerve' for term 'http://uri.interlex.org/base/ilx_0787864' was not found during lookup."
-    },
-    "nerve_feature_59": {
-      "label": "Label 'left superior laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0788780' was not found during lookup."
-    },
-    "nerve_feature_60": {
-      "label": "Label 'left thoracic cardiopulmonary branch of vagus nerve' for term 'http://uri.interlex.org/base/ilx_0794191' was not found during lookup."
+      "label": "Label 'right hypoglossal nerve' for term 'http://uri.interlex.org/base/ilx_0790245' was not found during lookup."
     },
     "nerve_feature_61": {
-      "label": "Label 'left thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0787543' was not found during lookup."
+      "label": "Label 'right recurrent laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0794225' was not found during lookup."
     },
     "nerve_feature_62": {
-      "label": "Label 'left vagus nerve' for term 'http://uri.interlex.org/base/ilx_0785628' was not found during lookup."
+      "label": "Label 'right superior laryngeal nerve' for term 'http://uri.interlex.org/base/ilx_0787738' was not found during lookup."
+    },
+    "nerve_feature_64": {
+      "label": "Label 'right thoracic vagus nerve' for term 'http://uri.interlex.org/base/ilx_0786664' was not found during lookup."
+    },
+    "nerve_feature_65": {
+      "label": "Label 'right vagus nerve' for term 'http://uri.interlex.org/base/ilx_0789705' was not found during lookup."
     },
     "thoracic_region": {
       "name": "Thoracic T1-T12"
@@ -210,208 +210,208 @@
     {
       "centrelines": [
         {
-          "id": "nerve_feature_53",
-          "models": "http://uri.interlex.org/base/ilx_0794142"
+          "id": "nerve_feature_56",
+          "models": "http://uri.interlex.org/base/ilx_0794141"
         },
         {
-          "id": "nerve_feature_62",
-          "models": "http://uri.interlex.org/base/ilx_0785628"
+          "id": "nerve_feature_65",
+          "models": "http://uri.interlex.org/base/ilx_0789705"
         },
         {
-          "id": "nerve_feature_61",
-          "models": "http://uri.interlex.org/base/ilx_0787543"
+          "id": "nerve_feature_64",
+          "models": "http://uri.interlex.org/base/ilx_0786664"
         },
         {
           "id": "nerve_feature_01",
-          "models": "http://uri.interlex.org/base/ilx_0794918"
+          "models": "http://uri.interlex.org/base/ilx_0794376"
         },
         {
           "id": "nerve_feature_02",
-          "models": "http://uri.interlex.org/base/ilx_0794919"
-        },
-        {
-          "id": "nerve_feature_03",
-          "models": "http://uri.interlex.org/base/ilx_0794920"
+          "models": "http://uri.interlex.org/base/ilx_0794377"
         },
         {
           "id": "nerve_feature_05",
-          "models": "http://uri.interlex.org/base/ilx_0795951"
-        },
-        {
-          "id": "nerve_feature_07",
-          "models": "http://uri.interlex.org/base/ilx_0796405"
+          "models": "http://uri.interlex.org/base/ilx_0796105"
         },
         {
           "id": "nerve_feature_08",
-          "models": "http://uri.interlex.org/base/ilx_0793952"
+          "models": "http://uri.interlex.org/base/ilx_0794382"
         },
         {
           "id": "nerve_feature_09",
-          "models": "http://uri.interlex.org/base/ilx_0796496"
-        },
-        {
-          "id": "nerve_feature_10",
-          "models": "http://uri.interlex.org/base/ilx_0794311"
+          "models": "http://uri.interlex.org/base/ilx_0794383"
         },
         {
           "id": "nerve_feature_11",
-          "models": "http://uri.interlex.org/base/ilx_0794073"
+          "models": "http://uri.interlex.org/base/ilx_0796399"
         },
         {
           "id": "nerve_feature_12",
-          "models": "http://uri.interlex.org/base/ilx_0795235"
+          "models": "http://uri.interlex.org/base/ilx_0795645"
         },
         {
           "id": "nerve_feature_13",
-          "models": "http://uri.interlex.org/base/ilx_0795541"
+          "models": "http://uri.interlex.org/base/ilx_0794056"
         },
         {
           "id": "nerve_feature_14",
-          "models": "http://uri.interlex.org/base/ilx_0794289"
+          "models": "http://uri.interlex.org/base/ilx_0794300"
         },
         {
           "id": "nerve_feature_15",
-          "models": "http://uri.interlex.org/base/ilx_0794266"
+          "models": "http://uri.interlex.org/base/ilx_0794109"
         },
         {
           "id": "nerve_feature_16",
-          "models": "http://uri.interlex.org/base/ilx_0796406"
-        },
-        {
-          "id": "nerve_feature_17",
-          "models": "http://uri.interlex.org/base/ilx_0794126"
-        },
-        {
-          "id": "nerve_feature_45",
-          "models": "http://uri.interlex.org/base/ilx_0794124"
-        },
-        {
-          "id": "nerve_feature_18",
-          "models": "http://uri.interlex.org/base/ilx_0793953"
-        },
-        {
-          "id": "nerve_feature_19",
-          "models": "http://uri.interlex.org/base/ilx_0796497"
-        },
-        {
-          "id": "nerve_feature_20",
-          "models": "http://uri.interlex.org/base/ilx_0794312"
-        },
-        {
-          "id": "nerve_feature_21",
-          "models": "http://uri.interlex.org/base/ilx_0794074"
-        },
-        {
-          "id": "nerve_feature_22",
-          "models": "http://uri.interlex.org/base/ilx_0795236"
-        },
-        {
-          "id": "nerve_feature_23",
-          "models": "http://uri.interlex.org/base/ilx_0795542"
-        },
-        {
-          "id": "nerve_feature_24",
-          "models": "http://uri.interlex.org/base/ilx_0794290"
-        },
-        {
-          "id": "nerve_feature_25",
-          "models": "http://uri.interlex.org/base/ilx_0794267"
-        },
-        {
-          "id": "nerve_feature_26",
-          "models": "http://uri.interlex.org/base/ilx_0796407"
-        },
-        {
-          "id": "nerve_feature_27",
-          "models": "http://uri.interlex.org/base/ilx_0794313"
-        },
-        {
-          "id": "nerve_feature_28",
-          "models": "http://uri.interlex.org/base/ilx_0794291"
-        },
-        {
-          "id": "nerve_feature_29",
-          "models": "http://uri.interlex.org/base/ilx_0794314"
-        },
-        {
-          "id": "nerve_feature_30",
-          "models": "http://uri.interlex.org/base/ilx_0794292"
-        },
-        {
-          "id": "nerve_feature_31",
-          "models": "http://uri.interlex.org/base/ilx_0794315"
-        },
-        {
-          "id": "nerve_feature_32",
-          "models": "http://uri.interlex.org/base/ilx_0794293"
-        },
-        {
-          "id": "nerve_feature_33",
-          "models": "http://uri.interlex.org/base/ilx_0794316"
-        },
-        {
-          "id": "nerve_feature_34",
-          "models": "http://uri.interlex.org/base/ilx_0794294"
-        },
-        {
-          "id": "nerve_feature_35",
-          "models": "http://uri.interlex.org/base/ilx_0794317"
-        },
-        {
-          "id": "nerve_feature_36",
-          "models": "http://uri.interlex.org/base/ilx_0794295"
-        },
-        {
-          "id": "nerve_feature_37",
-          "models": "http://uri.interlex.org/base/ilx_0794318"
-        },
-        {
-          "id": "nerve_feature_38",
-          "models": "http://uri.interlex.org/base/ilx_0794319"
-        },
-        {
-          "id": "nerve_feature_39",
-          "models": "http://uri.interlex.org/base/ilx_0794320"
-        },
-        {
-          "id": "nerve_feature_40",
-          "models": "http://uri.interlex.org/base/ilx_0796056"
-        },
-        {
-          "id": "nerve_feature_41",
-          "models": "http://uri.interlex.org/base/ilx_0796057"
-        },
-        {
-          "id": "nerve_feature_42",
-          "models": "http://uri.interlex.org/base/ilx_0796058"
-        },
-        {
-          "id": "nerve_feature_43",
-          "models": "http://uri.interlex.org/base/ilx_0796059"
-        },
-        {
-          "id": "nerve_feature_49",
-          "models": "http://uri.interlex.org/base/ilx_0794113"
+          "models": "http://uri.interlex.org/base/ilx_0795250"
         },
         {
           "id": "nerve_feature_54",
-          "models": "http://uri.interlex.org/base/ilx_0791765"
+          "models": "http://uri.interlex.org/base/ilx_0794851"
+        },
+        {
+          "id": "nerve_feature_17",
+          "models": "http://uri.interlex.org/base/ilx_0794154"
+        },
+        {
+          "id": "nerve_feature_18",
+          "models": "http://uri.interlex.org/base/ilx_0794278"
+        },
+        {
+          "id": "nerve_feature_19",
+          "models": "http://uri.interlex.org/base/ilx_0794255"
+        },
+        {
+          "id": "nerve_feature_20",
+          "models": "http://uri.interlex.org/base/ilx_0794181"
+        },
+        {
+          "id": "nerve_feature_21",
+          "models": "http://uri.interlex.org/base/ilx_0796400"
+        },
+        {
+          "id": "nerve_feature_22",
+          "models": "http://uri.interlex.org/base/ilx_0795646"
+        },
+        {
+          "id": "nerve_feature_23",
+          "models": "http://uri.interlex.org/base/ilx_0794057"
+        },
+        {
+          "id": "nerve_feature_24",
+          "models": "http://uri.interlex.org/base/ilx_0794301"
+        },
+        {
+          "id": "nerve_feature_25",
+          "models": "http://uri.interlex.org/base/ilx_0794110"
+        },
+        {
+          "id": "nerve_feature_26",
+          "models": "http://uri.interlex.org/base/ilx_0794155"
+        },
+        {
+          "id": "nerve_feature_27",
+          "models": "http://uri.interlex.org/base/ilx_0794279"
+        },
+        {
+          "id": "nerve_feature_28",
+          "models": "http://uri.interlex.org/base/ilx_0794256"
+        },
+        {
+          "id": "nerve_feature_29",
+          "models": "http://uri.interlex.org/base/ilx_0794182"
+        },
+        {
+          "id": "nerve_feature_30",
+          "models": "http://uri.interlex.org/base/ilx_0796401"
+        },
+        {
+          "id": "nerve_feature_31",
+          "models": "http://uri.interlex.org/base/ilx_0794302"
+        },
+        {
+          "id": "nerve_feature_32",
+          "models": "http://uri.interlex.org/base/ilx_0794280"
+        },
+        {
+          "id": "nerve_feature_33",
+          "models": "http://uri.interlex.org/base/ilx_0794257"
+        },
+        {
+          "id": "nerve_feature_34",
+          "models": "http://uri.interlex.org/base/ilx_0796402"
+        },
+        {
+          "id": "nerve_feature_35",
+          "models": "http://uri.interlex.org/base/ilx_0794303"
+        },
+        {
+          "id": "nerve_feature_36",
+          "models": "http://uri.interlex.org/base/ilx_0794281"
+        },
+        {
+          "id": "nerve_feature_37",
+          "models": "http://uri.interlex.org/base/ilx_0794258"
+        },
+        {
+          "id": "nerve_feature_38",
+          "models": "http://uri.interlex.org/base/ilx_0794304"
+        },
+        {
+          "id": "nerve_feature_39",
+          "models": "http://uri.interlex.org/base/ilx_0794282"
+        },
+        {
+          "id": "nerve_feature_40",
+          "models": "http://uri.interlex.org/base/ilx_0794305"
+        },
+        {
+          "id": "nerve_feature_41",
+          "models": "http://uri.interlex.org/base/ilx_0794283"
+        },
+        {
+          "id": "nerve_feature_42",
+          "models": "http://uri.interlex.org/base/ilx_0794306"
+        },
+        {
+          "id": "nerve_feature_43",
+          "models": "http://uri.interlex.org/base/ilx_0794284"
+        },
+        {
+          "id": "nerve_feature_44",
+          "models": "http://uri.interlex.org/base/ilx_0795597"
+        },
+        {
+          "id": "nerve_feature_46",
+          "models": "http://uri.interlex.org/base/ilx_0795748"
+        },
+        {
+          "id": "nerve_feature_47",
+          "models": "http://uri.interlex.org/base/ilx_0794228"
+        },
+        {
+          "id": "nerve_feature_50",
+          "models": "http://uri.interlex.org/base/ilx_0796411"
+        },
+        {
+          "id": "nerve_feature_53",
+          "models": "http://uri.interlex.org/base/ilx_0795623"
         },
         {
           "id": "nerve_feature_57",
-          "models": "http://uri.interlex.org/base/ilx_0794226"
+          "models": "http://uri.interlex.org/base/ilx_0792879"
         },
         {
           "id": "nerve_feature_58",
-          "models": "http://uri.interlex.org/base/ilx_0787864"
+          "models": "http://uri.interlex.org/base/ilx_0790245"
         },
         {
-          "id": "nerve_feature_59",
-          "models": "http://uri.interlex.org/base/ilx_0788780"
+          "id": "nerve_feature_61",
+          "models": "http://uri.interlex.org/base/ilx_0794225"
         },
         {
-          "id": "nerve_feature_60",
-          "models": "http://uri.interlex.org/base/ilx_0794191"
+          "id": "nerve_feature_62",
+          "models": "http://uri.interlex.org/base/ilx_0787738"
         }
       ],
       "id": "vagus",
